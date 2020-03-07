@@ -228,11 +228,6 @@ void Classifier::Preprocess(const cv::Mat& img,
 		  cv::Matx34f(0.0,0.0,sB,mB,
 		  	      0.0,sG,0.0,mG,
 			      sR,0.0,0.0,mR));
-  /*
-  cv::transform(sample_float,sample_gained, 
-		  cv::Matx34f(0.0,0.0,sB,mB,
-		  	      0.0,sG,0.0,mB,
-			      sR,0.0,0.0,mR));*/
   float* dstData2 = sample_gained.ptr<float>(0);
   std::cout << dstData2[0] << "\n";
   std::cout << dstData2[1] << "\n";
